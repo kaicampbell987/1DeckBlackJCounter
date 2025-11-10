@@ -1,0 +1,63 @@
+Agent Address agent1qtsrdweucrk09txdzm2f8masmstg933x6fvlcqddnaz3f2f38jg8zzf9v9l
+Player Management
+
+Add Player - Creates a new player (auto-numbered: Player 1, Player 2, etc.)
+
+Dealing Cards
+
+Deal <card> to Player <#>/Dealer - Deal a specific card face-up
+
+Example: Deal A to Player 1, Deal K to Dealer
+
+
+Deal Face Down to Player <#>/Dealer - Deal a card without specifying value
+
+Example: Deal Face Down to Dealer
+
+
+
+Revealing Face Down Cards
+
+Flip Player <#>/Dealer <card> - Reveal a face down card with its value
+
+Example: Flip Dealer K, Flip Player 1 A
+
+
+
+Drawing Cards (Hitting)
+
+Player <#> Hit <card> - Player draws a specific card
+
+Example: Player 1 Hit 5, Player 2 Hit Q
+
+
+Dealer Hit <card> - Dealer draws a specific card
+
+Example: Dealer Hit 7
+
+
+
+Probability Analysis
+
+Probability of <number> after Player <#>/Dealer hit - Calculate odds of hand total after next card
+
+Example: Probability of 21 after Player 1 hit
+Shows % chance of being greater than, less than, or equal to the target
+
+
+
+Game Management
+
+Status (or State, Show) - Display all card locations and counts
+Clear Hands (or Clear Hand, Clear) - Move all hands to discard pile (keeps players)
+Shuffle (or Reset, New Deck) - Reset to fresh 52-card deck, remove all players
+
+Card Tracking Zones:
+
+Deck - Undealt cards
+Face Down - Cards dealt but not yet revealed
+Player Hands - Each player's visible cards
+Dealer Hand - Dealer's visible cards
+Discard Pile - Used cards from previous hands
+
+The agent tracks all 52 cards across all zones throughout the session!
